@@ -1,0 +1,37 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Regular_extensions.MainWindow"
+        Title="MainWindow" Height="350" Width="525" KeyUp="Window_KeyUp">
+    <Window.TaskbarItemInfo>
+        <TaskbarItemInfo/>
+    </Window.TaskbarItemInfo>
+    <Grid>
+        <Label Content="Валидация данных" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="165" FontSize="15"/>
+        <Button Content="Выход" HorizontalAlignment="Left" Margin="380,268,0,0" VerticalAlignment="Top" Width="108" Click="Button_Click"/>
+        <ComboBox x:Name="selectvar_cb" HorizontalAlignment="Left" Margin="202,40,0,0" VerticalAlignment="Top" Width="286" RenderTransformOrigin="0.322,0.51" SelectedIndex="0">
+            <ListBoxItem Content="1. Натуральное Число"/>
+            <ListBoxItem Content="2. Вещественным числом с 2 знаками после запятой"/>
+            <ListBoxItem Content="3. Целым числом"/>
+            <ListBoxItem Content="4. Комплексным числом"/>
+            <ListBoxItem Content="5. Почтовым индексом"/>
+            <ListBoxItem Content="6. Почтовым адресом"/>
+            <ListBoxItem Content="7. HTML - контейнром"/>
+            <ListBoxItem Content="8. URL"/>
+            <ListBoxItem Content="9. Фамилией именем и отчеством"/>
+            <ListBoxItem Content="10. Телефонным номером в 11-значном формате"/>
+            <ListBoxItem Content="11. Адресом электронной почты"/>
+            <ListBoxItem Content="12. Адресом электронной почты в домене ru"/>
+            <ListBoxItem Content="13. Действительной календарной датой"/>
+            <ListBoxItem Content="14. Без орфографических ошибок написания жи, ши, ча, ща, чу, щу"/>
+            <ListBoxItem Content="15. Целым числом, разряды числа могут разделяться пробелами"/>
+            <ListBoxItem Content="16. Удалить из текста все подряд идущие повторы слов"/>
+
+
+        </ComboBox>
+        <Label Content="Выбор варианта" HorizontalAlignment="Left" Margin="301,9,0,0" VerticalAlignment="Top" Width="105"/>
+        <TextBox Name="text_tb" HorizontalAlignment="Left" Height="41" TextWrapping="Wrap" Text="Введите Выражение для проверки." VerticalAlignment="Top" Width="226" Margin="10,151,0,0"/>
+        <Button Content="Сверить с шаблоном&#xD;&#xA;" HorizontalAlignment="Left" Margin="288,151,0,0" VerticalAlignment="Top" Width="166" Height="41" FontSize="15" FontWeight="Bold" FontFamily="AcmeFont" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
